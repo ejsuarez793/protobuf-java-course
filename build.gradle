@@ -22,8 +22,10 @@ repositories {
 
 dependencies {
     implementation 'com.google.protobuf:protobuf-java:3.19.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // util dependency to convert to JSON
+    implementation 'com.google.protobuf:protobuf-java-util:3.19.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 protobuf {
